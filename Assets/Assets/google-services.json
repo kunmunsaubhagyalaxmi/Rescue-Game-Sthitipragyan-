@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1026005682103",
+    "firebase_url": "https://here-rescue-publish.firebaseio.com",
+    "project_id": "here-rescue-publish",
+    "storage_bucket": "here-rescue-publish.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026005682103:android:2e9fb737d443caaeb34a32",
+        "android_client_info": {
+          "package_name": "com.hero.rescue.pull.the.pin.puzzle.free.action"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026005682103-82l4m1ln29tolalfh10dl48dhbt841gi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE1nv7GKviwbaXpGmZbBW3vsLfV0lVgDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026005682103-82l4m1ln29tolalfh10dl48dhbt841gi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

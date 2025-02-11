@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://here-rescue-publish.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">1026005682103</string>
+  <string name="google_storage_bucket" translatable="false">here-rescue-publish.appspot.com</string>
+  <string name="project_id" translatable="false">here-rescue-publish</string>
+  <string name="google_api_key" translatable="false">AIzaSyAE1nv7GKviwbaXpGmZbBW3vsLfV0lVgDY</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAE1nv7GKviwbaXpGmZbBW3vsLfV0lVgDY</string>
+  <string name="google_app_id" translatable="false">1:1026005682103:android:2e9fb737d443caaeb34a32</string>
+  <string name="default_web_client_id" translatable="false">1026005682103-82l4m1ln29tolalfh10dl48dhbt841gi.apps.googleusercontent.com</string>
+</resources>
