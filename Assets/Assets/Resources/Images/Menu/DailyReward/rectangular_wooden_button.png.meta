@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e089ad5a982ddd943960fc61faad34b0
+guid: d49f1096b5feee7469d5939945d92fc7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,18 +108,40 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: rectangular_wooden_button_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 107
+        width: 471
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7277f7c89956409439a0f8bdbec5bdf8
+      internalID: -1515679810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: cbfeb134bc98e3841a6ee5af105769a8
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rectangular_wooden_button_0: -1515679810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e089ad5a982ddd943960fc61faad34b0
+guid: 1caf28a2ead585542a533bfd689e2867
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,18 +108,128 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wooden_frame-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 241
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f11a8ecf4c282744a14a37c332aedb0
+      internalID: -750937949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_frame-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 55
+        width: 319
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c73a3c91fc29849846ebdadff5ef2a
+      internalID: -1638292146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_frame-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 300
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af52013666f62244daf76d923718cbc6
+      internalID: -8410202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_frame-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 181
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d446ed3fc507b49a7115687014cdf0
+      internalID: -1530370603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_frame-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 354
+        width: 61
+        height: 9
+      alignment: 9
+      pivot: {x: 0.49999988, y: 0.6313398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365b215d9ab75ec45b96175bd869e16c
+      internalID: -1060585590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wooden_frame-removebg-preview_0: -750937949
+      wooden_frame-removebg-preview_1: -1638292146
+      wooden_frame-removebg-preview_2: -8410202
+      wooden_frame-removebg-preview_3: -1530370603
+      wooden_frame-removebg-preview_4: -1060585590
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
