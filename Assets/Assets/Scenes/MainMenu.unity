@@ -1251,9 +1251,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dailyGift: {fileID: 2062350883}
-  sprSelected: {fileID: 21300000, guid: 9eabe52aafdea9644bf5b33cadb6192f, type: 3}
-  sprHasClaim: {fileID: 21300000, guid: 29e3ce536579a7b46ba16c440fd1969a, type: 3}
-  sprDisable: {fileID: 21300000, guid: 0f4ae0a8e3618d441bd07758a990e0af, type: 3}
+  sprSelected: {fileID: 21300000, guid: 3820b46a0be5be4439b30a2c788ccabc, type: 3}
+  sprHasClaim: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
+  sprDisable: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
   gTick: {fileID: 1792424486}
   imgPreview: {fileID: 89135951}
   dayIndex: 3
@@ -7949,9 +7949,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dailyGift: {fileID: 2062350883}
-  sprSelected: {fileID: 21300000, guid: 9eabe52aafdea9644bf5b33cadb6192f, type: 3}
-  sprHasClaim: {fileID: 21300000, guid: 29e3ce536579a7b46ba16c440fd1969a, type: 3}
-  sprDisable: {fileID: 21300000, guid: 0f4ae0a8e3618d441bd07758a990e0af, type: 3}
+  sprSelected: {fileID: 21300000, guid: 3820b46a0be5be4439b30a2c788ccabc, type: 3}
+  sprHasClaim: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
+  sprDisable: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
   gTick: {fileID: 500541047}
   imgPreview: {fileID: 768895356}
   dayIndex: 5
@@ -8274,9 +8274,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dailyGift: {fileID: 2062350883}
-  sprSelected: {fileID: 21300000, guid: 9eabe52aafdea9644bf5b33cadb6192f, type: 3}
-  sprHasClaim: {fileID: 21300000, guid: 29e3ce536579a7b46ba16c440fd1969a, type: 3}
-  sprDisable: {fileID: 21300000, guid: 0f4ae0a8e3618d441bd07758a990e0af, type: 3}
+  sprSelected: {fileID: 21300000, guid: 3820b46a0be5be4439b30a2c788ccabc, type: 3}
+  sprHasClaim: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
+  sprDisable: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
   gTick: {fileID: 582606028}
   imgPreview: {fileID: 794227386}
   dayIndex: 1
@@ -8858,7 +8858,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c18ba717cd4e5954181c1a7171084e64, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9808,9 +9808,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dailyGift: {fileID: 2062350883}
-  sprSelected: {fileID: 21300000, guid: 465769833eab1924ead74316bfb5872e, type: 3}
-  sprHasClaim: {fileID: 21300000, guid: be5258c8e0a10004789babf8ab5ba8b4, type: 3}
-  sprDisable: {fileID: 21300000, guid: 82cbe2acb6467d24985ea4d16647480b, type: 3}
+  sprSelected: {fileID: 21300000, guid: 3820b46a0be5be4439b30a2c788ccabc, type: 3}
+  sprHasClaim: {fileID: -1515679810, guid: d49f1096b5feee7469d5939945d92fc7, type: 3}
+  sprDisable: {fileID: -1515679810, guid: d49f1096b5feee7469d5939945d92fc7, type: 3}
   gTick: {fileID: 664335664}
   imgPreview: {fileID: 927311295}
   dayIndex: 7
@@ -11634,9 +11634,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dailyGift: {fileID: 2062350883}
-  sprSelected: {fileID: 21300000, guid: 9eabe52aafdea9644bf5b33cadb6192f, type: 3}
-  sprHasClaim: {fileID: 21300000, guid: 29e3ce536579a7b46ba16c440fd1969a, type: 3}
-  sprDisable: {fileID: 21300000, guid: 0f4ae0a8e3618d441bd07758a990e0af, type: 3}
+  sprSelected: {fileID: 21300000, guid: 3820b46a0be5be4439b30a2c788ccabc, type: 3}
+  sprHasClaim: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
+  sprDisable: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
   gTick: {fileID: 304265996}
   imgPreview: {fileID: 1047383372}
   dayIndex: 6
@@ -20286,9 +20286,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dailyGift: {fileID: 2062350883}
-  sprSelected: {fileID: 21300000, guid: 9eabe52aafdea9644bf5b33cadb6192f, type: 3}
-  sprHasClaim: {fileID: 21300000, guid: 29e3ce536579a7b46ba16c440fd1969a, type: 3}
-  sprDisable: {fileID: 21300000, guid: 0f4ae0a8e3618d441bd07758a990e0af, type: 3}
+  sprSelected: {fileID: 21300000, guid: 3820b46a0be5be4439b30a2c788ccabc, type: 3}
+  sprHasClaim: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
+  sprDisable: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
   gTick: {fileID: 509910238}
   imgPreview: {fileID: 1866973526}
   dayIndex: 4
@@ -20861,7 +20861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.035635047, y: 0.0818977}
   m_AnchorMax: {x: 0.18970092, y: 0.52400005}
-  m_AnchoredPosition: {x: 31.000008, y: 98}
+  m_AnchoredPosition: {x: 31.000015, y: 98}
   m_SizeDelta: {x: 1.6499939, y: 2.289978}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947389863
@@ -22559,9 +22559,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dailyGift: {fileID: 2062350883}
-  sprSelected: {fileID: 21300000, guid: 9eabe52aafdea9644bf5b33cadb6192f, type: 3}
-  sprHasClaim: {fileID: 21300000, guid: 29e3ce536579a7b46ba16c440fd1969a, type: 3}
-  sprDisable: {fileID: 21300000, guid: 0f4ae0a8e3618d441bd07758a990e0af, type: 3}
+  sprSelected: {fileID: 21300000, guid: 3820b46a0be5be4439b30a2c788ccabc, type: 3}
+  sprHasClaim: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
+  sprDisable: {fileID: -1638292146, guid: 1caf28a2ead585542a533bfd689e2867, type: 3}
   gTick: {fileID: 72501447}
   imgPreview: {fileID: 2066855605}
   dayIndex: 2
