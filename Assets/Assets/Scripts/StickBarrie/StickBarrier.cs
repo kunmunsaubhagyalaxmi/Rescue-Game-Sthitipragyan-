@@ -61,6 +61,7 @@ public class StickBarrier : MonoBehaviour
       //  MapLevelManager.Instance.lstAllStick.Add(this);
         if (_moveType != MOVETYPE.FREE) {
             vStartPos = (Vector2)transform.localPosition;
+            vStartPos.x = 0.5f; // Ensure x value is 0.5
         }
     }
 
@@ -258,40 +259,54 @@ public class StickBarrier : MonoBehaviour
         }
     }
 
-    #region Editor
     public void SaveEndPos()
     {
-        if (isMove2Pos)
-        {
-            vEndPos = transform.localPosition/*position*/;
-            if (vStartPos == Vector2.zero)
-            {
-                vStartPos = vEndPos;
-            }
-            transform.localPosition/*position*/ = vStartPos;
-        }
-        else {
-            vEndPos = transform.localPosition;
-            if (vStartPos == Vector2.zero)
-            {
-                vStartPos = vEndPos;
-            }
-            transform.localPosition = vStartPos;
-        }
-
+        vEndPos = transform.localPosition;
+        vEndPos.x = 0.5f; // Ensure x value is 0.5
+        transform.localPosition = vStartPos;
     }
 
     public void SaveStartPos()
     {
-        if (isMove2Pos)
-        {
-            vStartPos = transform.localPosition/*position*/;
-            transform.localPosition/*position*/ = vStartPos;
-        }
-        else {
-            vStartPos = transform.localPosition;
-            transform.localPosition = vStartPos;
-        }
+        vStartPos = transform.localPosition;
+        vStartPos.x = 0.5f; // Ensure x value is 0.5
+        transform.localPosition = vStartPos;
     }
-    #endregion
+
+    //#region Editor
+    //public void SaveEndPos()
+    //{
+    //    if (isMove2Pos)
+    //    {
+    //        vEndPos = transform.localPosition/*position*/;
+    //        if (vStartPos == Vector2.zero)
+    //        {
+    //            vStartPos = vEndPos;
+    //        }
+    //        transform.localPosition/*position*/ = vStartPos;
+    //    }
+    //    else {
+    //        vEndPos = transform.localPosition;
+    //        if (vStartPos == Vector2.zero)
+    //        {
+    //            vStartPos = vEndPos;
+    //        }
+    //        transform.localPosition = vStartPos;
+    //    }
+
+    //}
+
+    //public void SaveStartPos()
+    //{
+    //    if (isMove2Pos)
+    //    {
+    //        vStartPos = transform.localPosition/*position*/;
+    //        transform.localPosition/*position*/ = vStartPos;
+    //    }
+    //    else {
+    //        vStartPos = transform.localPosition;
+    //        transform.localPosition = vStartPos;
+    //    }
+    //}
+    //#endregion
 }
