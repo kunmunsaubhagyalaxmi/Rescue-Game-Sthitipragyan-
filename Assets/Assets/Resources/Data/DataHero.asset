@@ -22,7 +22,7 @@ MonoBehaviour:
     nameSkin: Hercules/hercules
     nameSkinSword: Hercules/kiem hercules
     typeUnlock: 1
-    price: 15000
+    price: 0
   - itemName: KING
     nameSkin: Athur/Athur
     nameSkinSword: Athur/kiem Athur
