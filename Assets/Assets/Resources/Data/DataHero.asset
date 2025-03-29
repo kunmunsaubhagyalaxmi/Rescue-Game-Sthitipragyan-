@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: DataHero
   m_EditorClassIdentifier: 
   infos:
-  - itemName: PRINCE
-    nameSkin: 1
-    nameSkinSword: kiem
-    typeUnlock: 1
-    price: 0
   - itemName: WEREWOLF
     nameSkin: Hercules/hercules
     nameSkinSword: Hercules/kiem hercules
+    typeUnlock: 1
+    price: 0
+  - itemName: PRINCE
+    nameSkin: 1
+    nameSkinSword: kiem
     typeUnlock: 1
     price: 0
   - itemName: KING
