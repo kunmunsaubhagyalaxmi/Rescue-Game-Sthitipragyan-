@@ -6261,7 +6261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.012311256, y: 0.855}
   m_AnchorMax: {x: 0.25449115, y: 0.90300006}
-  m_AnchoredPosition: {x: 399, y: 152}
+  m_AnchoredPosition: {x: 399, y: 152.00002}
   m_SizeDelta: {x: -2, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186900205
@@ -85756,7 +85756,7 @@ MonoBehaviour:
   trailTime: 0.24
   lmTouch:
     serializedVersion: 2
-    m_Bits: 528384
+    m_Bits: 0
   thisCamera: {fileID: 64204347}
 --- !u!20 &2766080083064159523
 Camera:
