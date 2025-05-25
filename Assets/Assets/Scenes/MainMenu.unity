@@ -20629,7 +20629,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1906473977}
-  - component: {fileID: 1906473978}
   - component: {fileID: 1906473979}
   m_Layer: 0
   m_Name: AdsManager
@@ -20653,18 +20652,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1906473978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906473976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aa42cbad4031384b9ee90491046ae83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1906473979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20861,7 +20848,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.035635047, y: 0.0818977}
   m_AnchorMax: {x: 0.18970092, y: 0.52400005}
-  m_AnchoredPosition: {x: 73.00014, y: 98.584}
+  m_AnchoredPosition: {x: 73.00017, y: 98.584}
   m_SizeDelta: {x: 100, y: -58.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947389863
