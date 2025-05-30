@@ -3323,6 +3323,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee_E1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3505073508222193924, guid: e9bd682b6b6c2214a8aaa1cd8d58b107, type: 3}
+      propertyPath: lmColl.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505073508222193924, guid: e9bd682b6b6c2214a8aaa1cd8d58b107, type: 3}
+      propertyPath: lmPlayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505073508222193924, guid: e9bd682b6b6c2214a8aaa1cd8d58b107, type: 3}
+      propertyPath: lmMapObject.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
