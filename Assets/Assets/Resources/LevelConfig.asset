@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LevelConfig
   m_EditorClassIdentifier: 
   lstAllLevel:
-  - {fileID: 1341071657, guid: 9a8b484444af61b4fb94788ed7c1eea1, type: 3}
+  - {fileID: 1341071657, guid: ae3bf2148afd77049a840fe248f4b55c, type: 3}
   - {fileID: 1341071657, guid: 629e3fa9a7f28ad4a89e7278f5d1e64b, type: 3}
   - {fileID: 1341071657, guid: eeced504432cecf4fb7ad681bfdddea1, type: 3}
   - {fileID: 1341071657, guid: e367076485bc7e34f935fa854453484f, type: 3}
@@ -78,8 +78,6 @@ MonoBehaviour:
   - {fileID: 1341071657, guid: 4ee44d8530be7844bb0d2b51e95b0c3f, type: 3}
   - {fileID: 1341071657, guid: d1a05cce12c1ecc4b9ade250d78d3a94, type: 3}
   - {fileID: 1341071657, guid: bc05f111ea5d2ff4d80ecf3b99a18f40, type: 3}
-  - {fileID: 1341071657, guid: 8461a450089d4804894bb1976d4474a7, type: 3}
-  - {fileID: 1341071657, guid: 99b717f4de9328647b2dae65dc20e53f, type: 3}
   - {fileID: 1341071657, guid: 61c761e9aff1a2144bef2d276c25d1f4, type: 3}
   - {fileID: 1341071657, guid: 3ae46742b8b97934884668f3250b1768, type: 3}
   - {fileID: 1341071657, guid: 9e90ee4a60ad4804d86a666b6dd78383, type: 3}
