@@ -3462,6 +3462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterSpawn
       objectReference: {fileID: 0}
+    - target: {fileID: 2800725489945902426, guid: 4f33d1dcf1681694c9efc5e1aab72926, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3983,11 +3987,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8688539321358041613, guid: d84b0446e06d3fe41aef0684dd658a16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.52
+      value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 8688539321358041613, guid: d84b0446e06d3fe41aef0684dd658a16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.51
+      value: 3.91
       objectReference: {fileID: 0}
     - target: {fileID: 8688539321358041613, guid: d84b0446e06d3fe41aef0684dd658a16, type: 3}
       propertyPath: m_LocalPosition.z
