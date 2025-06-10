@@ -207951,13 +207951,66 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5274862688083696865, guid: 154d89f5d7906954b81cd118a9a4ff61, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6181732152434556938}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5274862687470775304, guid: 154d89f5d7906954b81cd118a9a4ff61, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4256076175706578110}
   m_SourcePrefab: {fileID: 100100000, guid: 154d89f5d7906954b81cd118a9a4ff61, type: 3}
 --- !u!4 &7702581368038939598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5274862688083696865, guid: 154d89f5d7906954b81cd118a9a4ff61, type: 3}
   m_PrefabInstance: {fileID: 2580847752677164847}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7702581368585743143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5274862687470775304, guid: 154d89f5d7906954b81cd118a9a4ff61, type: 3}
+  m_PrefabInstance: {fileID: 2580847752677164847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &4256076175706578110
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702581368585743143}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.59999996, y: 0, z: 0.59999996, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.7, y: 0.42}
+    newSize: {x: 1.9790599, y: 0.42000023}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7, y: 0.42}
+  m_EdgeRadius: 0
 --- !u!4 &7702581368970723991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5274862686616339896, guid: 154d89f5d7906954b81cd118a9a4ff61, type: 3}
