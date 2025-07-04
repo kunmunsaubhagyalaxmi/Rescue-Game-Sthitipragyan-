@@ -9,7 +9,7 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
-
+    
     public GameObject effectCamera, BtnReplay, bouderCoinFly, btnx3Coin, btnTabNext, phaohoa, btnReplay2, btnSkipLevelLose, warningAchievment;
     public Sprite winSp, loseSp;
     public PhysicsMaterial2D matStone;
@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
     public int coinTemp;
     void Start()
     {
+        AdManager.Instance.LoadAd();
+        Utils.LoadGameData();
         levelTextGameOver.text = txtLevel.text = "LEVEL " + (Utils.LEVEL_INDEX + 1).ToString(/*"00,#"*/);
         txtCoinWin.text = Utils.currentCoin.ToString(/*"00,#"*/);
         coinTemp = Utils.currentCoin;
@@ -242,6 +244,7 @@ public class GameManager : MonoBehaviour
     }
     public void OnNextLevel()
     {
+        Utils.SaveGameData(); // Add this line
         Utils.LEVEL_INDEX += 1;
         Utils.SaveLevel();
 
@@ -278,6 +281,20 @@ public class GameManager : MonoBehaviour
         ObjectPoolerManager.Instance.ClearAllPool();
         SceneManager.LoadSceneAsync("MainGame");
     }
+
+    public void On3xCoin()
+    {
+#if UNITY_EDITOR
+        Utils.currentCoin *= 3 /** Utils.BASE_COIN*/;
+        OnUpdateCoin();
+        OnNextLevel();
+#else
+                    Utils.currentCoin += 3 * Utils.BASE_COIN;
+                    OnUpdateCoin();
+                    OnNextLevel();
+#endif
+        //    Debug.LogError("X2 Coin");
+    }
     public void OnX2Coin()
     {
 #if UNITY_EDITOR
@@ -290,21 +307,95 @@ public class GameManager : MonoBehaviour
                     OnNextLevel();
 #endif
         //    Debug.LogError("X2 Coin");
+        // // Check if AdManager exists
+        // if (AdManager.Instance != null)
+        // {
+        //     // Show rewarded ad first, then multiply coins
+        //     AdManager.Instance.ShowRewardedAdFor3xCoins(0, () =>
+        //     {
+        //         // // This runs AFTER user watches the ad
+        //         // MultiplyCoins();
+        //         // OnUpdateCoin();
+        //         // OnNextLevel();
+        //     });
+        // }
+        // else
+        // {
+        //     // // No ads available, just multiply coins
+        //     // MultiplyCoins();
+        //     // OnUpdateCoin();
+        //     // OnNextLevel();
+        //     On3xCoin();
+        // }
+    }
 
+    // Simple method to multiply coins
+    private void MultiplyCoins()
+    {
+    #if UNITY_EDITOR
+        Utils.currentCoin *= 3;  // Multiply by 3 in editor
+    #else
+        Utils.currentCoin += 3 * Utils.BASE_COIN;  // Add bonus in build
+    #endif
+        Debug.Log("Coins multiplied! New total: " + Utils.currentCoin);
     }
     public void OnSkipByVideo()
     {
+        if (Utils.currentCoin >= 100)
+        {
+            Utils.currentCoin -= 100;
+            OnUpdateCoin();
+            OnNextLevel();
+        }
+        else
+        {
+            Debug.LogError("Not enough coins to skip level. Need 100 coins.");
+        }
 
-#if UNITY_EDITOR
-        OnNextLevel();
-#else
+// #if UNITY_EDITOR
+//         OnNextLevel();
+// #else
 
-                    OnNextLevel();
-#endif
+//                     OnNextLevel();
+// #endif
 
     }
+
+    public void AddCoins(int amount)
+    {
+        Utils.currentCoin += amount;
+        OnUpdateCoin();
+        Debug.LogError("Add " + amount + " coins. Total: " + Utils.currentCoin);
+        
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlaySound(SoundManager.Instance.acClick);
+        }
+    }
+
+    // Add this to your GameManager class
+    public void AddCoinsWithAd(int coinAmount)
+    {
+        if (AdManager.Instance != null)
+        {
+            AdManager.Instance.ShowRewardedAdForCoins(coinAmount, () =>
+            {
+                Debug.Log("Successfully added coins after watching ad!");
+                // Optional: Show success message to player
+            });
+        }
+        else
+        {
+            Debug.LogError("AdManager not found!");
+            // Fallback: Add coins directly if no ads
+            AddCoins(coinAmount);
+        }
+    }
+
+
     public void OnReplay()
     {
+        Utils.SaveGameData(); // Add this line
         if (ObjectPoolerManager.Instance != null)
         {
             ObjectPoolerManager.Instance.ClearAllPool();
@@ -314,6 +405,7 @@ public class GameManager : MonoBehaviour
     }
     public void GoToMenu()
     {
+        Utils.SaveGameData(); // Add this line
         if (ObjectPoolerManager.Instance != null)
         {
             ObjectPoolerManager.Instance.ClearAllPool();
@@ -346,8 +438,15 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationFocus(bool focus)
     {
-        //if (!focus)
-        //    Utils.SaveGameData();
+        if (focus)
+        {
+            Utils.LoadGameData();
+            OnUpdateCoin();
+        }
+        else
+        {
+            Utils.SaveGameData();
+        }
     }
 
 

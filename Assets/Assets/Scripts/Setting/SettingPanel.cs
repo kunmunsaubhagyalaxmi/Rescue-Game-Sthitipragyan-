@@ -62,8 +62,9 @@ public class SettingPanel : MonoBehaviour
         Utils.ChangeVibrate();
     }
     public void OnClose() {
-
+        Debug.Log("back");
         anim.Play("PopUpAnimClose");
+        Debug.LogError("back");
         //   gameObject.SetActive(false);
     }
     public void OnRestorePurchase() {

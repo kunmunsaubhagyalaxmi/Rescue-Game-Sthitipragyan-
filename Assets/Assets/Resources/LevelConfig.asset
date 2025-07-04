@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LevelConfig
   m_EditorClassIdentifier: 
   lstAllLevel:
-  - {fileID: 1341071657, guid: b054c8fa29527094abc5e17840fd3cb0, type: 3}
+  - {fileID: 1341071657, guid: 049419499c71c564883315d07ffe53ae, type: 3}
   - {fileID: 1341071657, guid: 629e3fa9a7f28ad4a89e7278f5d1e64b, type: 3}
   - {fileID: 1341071657, guid: eeced504432cecf4fb7ad681bfdddea1, type: 3}
   - {fileID: 1341071657, guid: e367076485bc7e34f935fa854453484f, type: 3}
@@ -27,9 +27,9 @@ MonoBehaviour:
   - {fileID: 1341071657, guid: bed65baae3e4f5f45a144af197442272, type: 3}
   - {fileID: 1341071657, guid: 359273bad83757047bb5ffc0cd5fa0fb, type: 3}
   - {fileID: 1341071657, guid: 89bf840901313584a9098fa96ef0f903, type: 3}
+  - {fileID: 1341071657, guid: bfda2752ba7937640a1c2d5340900892, type: 3}
   - {fileID: 1341071657, guid: 14cec66dc7112964fb3c29e1d606fd32, type: 3}
   - {fileID: 1341071657, guid: a12bf89f7b78c5b4a9a9041b80bc055c, type: 3}
-  - {fileID: 1341071657, guid: bfda2752ba7937640a1c2d5340900892, type: 3}
   - {fileID: 1341071657, guid: e16e31bf20f99594e88add1a63b8d0cd, type: 3}
   - {fileID: 1341071657, guid: c5eadbae869b90d48a7c84911deaae79, type: 3}
   - {fileID: 1341071657, guid: 4c823f39b46395d4cb370e988cc9f0d5, type: 3}
@@ -41,7 +41,6 @@ MonoBehaviour:
   - {fileID: 1341071657, guid: d8756d0738171a947840a7a5c28f1a44, type: 3}
   - {fileID: 1341071657, guid: caa0eb7989a4b4241b51cadf42fe95df, type: 3}
   - {fileID: 1341071657, guid: e580e68aece8b964a8892371df90ee57, type: 3}
-  - {fileID: 1341071657, guid: 6b19c4a8a760fd04e94ba54e15efa9e7, type: 3}
   - {fileID: 1341071657, guid: 2cdcf6c550e0be44a88deaeb7fb97a41, type: 3}
   - {fileID: 1341071657, guid: eed7e8d5bc8c1a640b4acf4ecb403bd5, type: 3}
   - {fileID: 1341071657, guid: 1d4ad9e18a4525f418691c3819168e7a, type: 3}
@@ -55,10 +54,8 @@ MonoBehaviour:
   - {fileID: 1341071657, guid: 71c0f5d995f2ce1499d9560c91c3b9a5, type: 3}
   - {fileID: 1341071657, guid: 92a6ee99fe70778488d37215661ea568, type: 3}
   - {fileID: 1341071657, guid: d0e01cf82279b9941865d258b79c52bc, type: 3}
-  - {fileID: 1341071657, guid: fe24120f68dcefd4486a4a1407c1c4d1, type: 3}
   - {fileID: 1341071657, guid: 1e089f01482b2b44cb70faf721e50a0a, type: 3}
   - {fileID: 1341071657, guid: 400c5caa27dc3a3488a091f480fdba7e, type: 3}
-  - {fileID: 1341071657, guid: b054c8fa29527094abc5e17840fd3cb0, type: 3}
   - {fileID: 1341071657, guid: 4f0b67745ad4928409842588890a4ae5, type: 3}
   - {fileID: 1341071657, guid: ca8f1f11f93197641bab83030ecbfe8e, type: 3}
   - {fileID: 1341071657, guid: 6ca8dd89ae826744cab79e85934e0734, type: 3}
@@ -148,5 +145,5 @@ MonoBehaviour:
   - {fileID: 1341071657, guid: 8dc2a9e60d3b43a4b90435983afe0b70, type: 3}
   - {fileID: 1341071657, guid: 4e39638f243e68d45a99f07541f78e72, type: 3}
   - {fileID: 1341071657, guid: 504bf76fb02ace648b23d9679bb492a0, type: 3}
-  - {fileID: 1341071657, guid: 3a20e46ce8c74aa4bb6929bd428b0b7e, type: 3}
+  - {fileID: 1341071657, guid: 7a90fb6c43efb5741bb7d13b09da4c42, type: 3}
   levelSkips: 

@@ -2866,7 +2866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3580600929575691664, guid: be9b178affd1c2542b9d8f71d565bf2d, type: 3}
       propertyPath: m_text
-      value: Lava can damage Gold and Hero
+      value: Lava can damage fruit and Hero
       objectReference: {fileID: 0}
     - target: {fileID: 3580600929575691664, guid: be9b178affd1c2542b9d8f71d565bf2d, type: 3}
       propertyPath: m_fontSize

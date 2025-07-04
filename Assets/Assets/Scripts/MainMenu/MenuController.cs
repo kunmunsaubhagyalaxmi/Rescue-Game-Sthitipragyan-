@@ -27,6 +27,7 @@ public class MenuController : MonoBehaviour
     public Text txtCurLevel;
     void Start()
     {
+        AdManager.Instance.LoadAd();
         Utils.LoadGameData();
         txtCurLevel.text = "LEVEL " + (Utils.LEVEL_INDEX + 1);
         if (SoundManager.Instance != null)
@@ -141,6 +142,11 @@ public class MenuController : MonoBehaviour
             return;
         shopManager.gameObject.SetActive(true);
         shopManager.ChangeSkin(DataController.instance.heroData.infos[DataParam.currentHero].nameSkin);
+    }
+
+    public void quit()
+    {
+        Application.Quit();
     }
 
 

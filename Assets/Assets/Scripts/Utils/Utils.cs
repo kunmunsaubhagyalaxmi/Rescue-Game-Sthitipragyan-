@@ -57,21 +57,32 @@ public class Utils
     {
      //   PlayerPrefs.SetInt(COIN_KEY, currentCoin);
       //  PlayerPrefs.Save();
+        PlayerPrefs.SetInt(COIN_KEY, currentCoin);
+        PlayerPrefs.Save();
+        Debug.Log("Coins saved: " + currentCoin);
     }
     public static void SaveLevel()
     {
         PlayerPrefs.SetInt(LEVEL_KEY, LEVEL_INDEX);
       //  PlayerPrefs.Save();
+      PlayerPrefs.Save();
+        Debug.Log("Level saved: " + LEVEL_INDEX);
     }
     public static void SaveGameData()
     {
         SaveCoin();
         SaveLevel();
     }
+
+    public static void LoadCoin()
+    {
+        currentCoin = PlayerPrefs.GetInt(COIN_KEY, 0);
+        Debug.Log("Coins loaded: " + currentCoin);
+    }
     public static void LoadGameData()
     {
         LEVEL_INDEX = PlayerPrefs.GetInt(LEVEL_KEY, 0);
-       // currentCoin = PlayerPrefs.GetInt(COIN_KEY, 0);
+        currentCoin = PlayerPrefs.GetInt(COIN_KEY, 0);
         useMediumImage = PlayerPrefs.GetInt(QUALITY_IMAGE, 0) == 0 ? false : true;
         isSoundOn = PlayerPrefs.GetInt(CHANGE_SOUND, 1) == 0 ? false : true;
         isMusicOn = PlayerPrefs.GetInt(CHANGE_MUSIC, 1) == 0 ? false : true;
@@ -96,25 +107,25 @@ public class Utils
     public static void SaveImageSeting()
     {
         PlayerPrefs.SetInt(QUALITY_IMAGE, useMediumImage ? 1 : 0);
-      //  PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
     public static bool isSoundOn;
     public static void ChangeSound()
     {
         PlayerPrefs.SetInt(CHANGE_SOUND, isSoundOn ? 1 : 0);
-      //  PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
     public static bool isMusicOn;
     public static void ChangeMusic()
     {
         PlayerPrefs.SetInt(CHANGE_MUSIC, isMusicOn ? 1 : 0);
-       // PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
     public static bool isVibrateOn;
     public static void ChangeVibrate()
     {
         PlayerPrefs.SetInt(CHANGE_VIBRATE, isVibrateOn ? 1 : 0);
-     //   PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
 
 
@@ -122,7 +133,7 @@ public class Utils
     public static void SaveRemoveAds()
     {
         PlayerPrefs.SetInt(HAS_REMOVE_ADS, isRemoveAds ? 1 : 0);
-      //  PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
 
 
@@ -140,14 +151,14 @@ public class Utils
     {
         string _key = System.DateTime.Now.Day + "_" + System.DateTime.Now.Month;
         PlayerPrefs.SetString(KEY_DAILY_REWARD, _key);
-       // PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
     public static int curDailyGift;
     public static bool cantakegiftdaily;
     public static void SaveDailyGift()
     {
         PlayerPrefs.SetInt(KEY_CURRENT_DAILY_GIFT, curDailyGift);
-      //  PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
     #endregion
 
@@ -187,7 +198,7 @@ public class Utils
     public static void SetSkinNormal(string skinName)
     {
         PlayerPrefs.SetString(KEY_SKIN_NORMAL, skinName);
-      //  PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
     public static string GetCurSkinSword()
     {
@@ -196,7 +207,7 @@ public class Utils
     public static void SetSkinSword(string skinName)
     {
         PlayerPrefs.SetString(KEY_SKIN_SWORD, skinName);
-      //  PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
     //public static void SavePlayerSkin(string _skinNormal/*, string _skinSword*/)
     //{
