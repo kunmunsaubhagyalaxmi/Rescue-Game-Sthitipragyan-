@@ -112,7 +112,7 @@ public class EnemyBase : MonoBehaviour
                     arrow.transform.position = saPlayer.skeleton.ScaleX > 0 ? leftAttack.transform.position : rightAttack.transform.position;
                     arrow.transform.localScale = new Vector2(saPlayer.skeleton.ScaleX, arrow.transform.localScale.y);
                     arrow.SetActive(true);
-                    arrow.GetComponent<Rigidbody2D>().velocity = saPlayer.skeleton.ScaleX > 0 ? Vector2.left * 4 : Vector2.right * 4;
+                    arrow.GetComponent<Rigidbody2D>().linearVelocity = saPlayer.skeleton.ScaleX > 0 ? Vector2.left * 4 : Vector2.right * 4;
                     if (SoundManager.Instance != null)
                     {
                         SoundManager.Instance.PlaySound(SoundManager.Instance.acMeleeAttack);
@@ -135,7 +135,7 @@ public class EnemyBase : MonoBehaviour
                 arrow.transform.position = saPlayer.skeleton.ScaleX > 0 ? leftAttack.transform.position : rightAttack.transform.position;
                 arrow.transform.localScale = new Vector2(saPlayer.skeleton.ScaleX, arrow.transform.localScale.y);
                 arrow.SetActive(true);
-                arrow.GetComponent<Rigidbody2D>().velocity = saPlayer.skeleton.ScaleX > 0 ? Vector2.left : Vector2.right;
+                arrow.GetComponent<Rigidbody2D>().linearVelocity = saPlayer.skeleton.ScaleX > 0 ? Vector2.left : Vector2.right;
                 if (SoundManager.Instance != null)
                 {
                     SoundManager.Instance.PlaySound(SoundManager.Instance.acMeleeAttack);
@@ -310,7 +310,7 @@ public class EnemyBase : MonoBehaviour
         switch (enemyType)
         {
             case ENEMY_TYPE.MELEE:
-                rig.velocity = moveSpeed * (saPlayer.skeleton.ScaleX > 0 ? Vector2.left : Vector2.right);
+                rig.linearVelocity = moveSpeed * (saPlayer.skeleton.ScaleX > 0 ? Vector2.left : Vector2.right);
                 PlayAnim(str_Run, true);
                 break;
             case ENEMY_TYPE.MONSTER:
@@ -338,7 +338,7 @@ public class EnemyBase : MonoBehaviour
     {
         // isContinueDetect = false;
 
-        rig.velocity = Vector2.zero;
+        rig.linearVelocity = Vector2.zero;
         if (enemyType == ENEMY_TYPE.RANGE)
         {
             if (hitPlayer.collider != null)
@@ -382,7 +382,7 @@ public class EnemyBase : MonoBehaviour
             //    isContinueDetect = false;
             PlayAnim(str_Lose, false);
             _charStage = CHAR_STATE.DIE;
-            rig.velocity = Vector2.zero;
+            rig.linearVelocity = Vector2.zero;
             rig.constraints = RigidbodyConstraints2D.FreezePositionX;
             transform.rotation = Quaternion.identity;
             rig.constraints = RigidbodyConstraints2D.FreezeRotation;

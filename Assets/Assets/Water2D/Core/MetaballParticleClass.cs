@@ -38,7 +38,7 @@ public class MetaballParticleClass : MonoBehaviour
                     SpawnerParent.DropsUsed--;
 
                 if (rb != null) // reset speed simulation in Editor
-                    rb.velocity *= 0f;
+                    rb.linearVelocity *= 0f;
 
                 delta *= 0;
             }
@@ -157,8 +157,8 @@ public class MetaballParticleClass : MonoBehaviour
         if (rb == null)
             return;
 
-        Vector2 _vel = rb.velocity;
-        _vel = rb.velocity;
+        Vector2 _vel = rb.linearVelocity;
+        _vel = rb.linearVelocity;
 
         if (_vel.x < Velocity_Limiter_X.x)
         {
@@ -180,7 +180,7 @@ public class MetaballParticleClass : MonoBehaviour
             _vel.y = Velocity_Limiter_Y.y;
         }
 
-        rb.velocity = _vel;
+        rb.linearVelocity = _vel;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -269,7 +269,7 @@ public class MetaballParticleClass : MonoBehaviour
             //print("try blending");
             //mix only in movement
 
-            if (rb.velocity.sqrMagnitude < 0.000001f)
+            if (rb.linearVelocity.sqrMagnitude < 0.000001f)
               return;
 
             int i = Physics2D.OverlapCircleNonAlloc(rb.position, cc.radius * .3f, Contacts, 1 << gameObject.layer);
@@ -325,7 +325,7 @@ public class MetaballParticleClass : MonoBehaviour
 
             //mix only in movement
 
-            if (rb.velocity.sqrMagnitude < 0.00000001f)
+            if (rb.linearVelocity.sqrMagnitude < 0.00000001f)
                 return;
 
             int c = 0;

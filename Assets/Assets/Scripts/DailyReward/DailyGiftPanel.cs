@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class DailyGiftPanel : MonoBehaviour
 {
-    public Button btnClaimX3, btnClaim;
+    public Button btnClaim;
+    //public Button btnClaimX3,
     public Button[] gAllGift;
     public RewardItem[] _allRewardItems;
     public int _dayIndex = 1;

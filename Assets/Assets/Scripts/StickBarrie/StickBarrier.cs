@@ -116,7 +116,7 @@ public class StickBarrier : MonoBehaviour
                             MoveStick2Pos(vEndPos);
                         else
                         {
-                            _rig2D.velocity = Vector2.zero;
+                            _rig2D.linearVelocity = Vector2.zero;
                             beginMove = false;
                             moveBack = true;
                         }
@@ -126,7 +126,7 @@ public class StickBarrier : MonoBehaviour
                             MoveStick2Pos(vStartPos);
                         else
                         {
-                            _rig2D.velocity = Vector2.zero;
+                            _rig2D.linearVelocity = Vector2.zero;
                             beginMove = false;
                             moveBack = false;
                         }
@@ -164,7 +164,7 @@ public class StickBarrier : MonoBehaviour
             case MOVETYPE.LEFT:
                 if (beginMove && !moveBack)
                 {
-                    _rig2D.velocity = Vector2.left * moveSpeed * speedAdd;
+                    _rig2D.linearVelocity = Vector2.left * moveSpeed * speedAdd;
                 }
 
                 if (moveBack && beginMove)
@@ -183,7 +183,7 @@ public class StickBarrier : MonoBehaviour
             case MOVETYPE.RIGHT:
                 if (beginMove && !moveBack)
                 {
-                    _rig2D.velocity = Vector2.right * moveSpeed * speedAdd;
+                    _rig2D.linearVelocity = Vector2.right * moveSpeed * speedAdd;
                 }
 
                 if (moveBack && beginMove)
@@ -202,7 +202,7 @@ public class StickBarrier : MonoBehaviour
             case MOVETYPE.UP:
                 if (beginMove && !moveBack)
                 {
-                    _rig2D.velocity = Vector2.up * moveSpeed * speedAdd;
+                    _rig2D.linearVelocity = Vector2.up * moveSpeed * speedAdd;
                 }
 
                 if (moveBack && beginMove)
@@ -221,7 +221,7 @@ public class StickBarrier : MonoBehaviour
             case MOVETYPE.DOWN:
                 if (beginMove && !moveBack)
                 {
-                    _rig2D.velocity = Vector2.down * moveSpeed * speedAdd;
+                    _rig2D.linearVelocity = Vector2.down * moveSpeed * speedAdd;
                 }
 
                 if (moveBack && beginMove)

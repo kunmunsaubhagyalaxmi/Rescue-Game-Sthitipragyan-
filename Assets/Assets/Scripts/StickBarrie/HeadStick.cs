@@ -14,7 +14,7 @@ public class HeadStick : MonoBehaviour
             if (stickBarrier.beginMove)
             {
                 Debug.Log("barrier moving");
-                stickBarrier._rig2D.velocity = Vector2.zero;
+                stickBarrier._rig2D.linearVelocity = Vector2.zero;
                 stickBarrier.moveBack = true;
                 if (SoundManager.Instance != null)
                 {

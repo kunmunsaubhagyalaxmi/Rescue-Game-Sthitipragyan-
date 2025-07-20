@@ -147,7 +147,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (!isJump)
             {
-                _rig2D.velocity = new Vector2(saPlayer.skeleton.ScaleX, 4);
+                _rig2D.linearVelocity = new Vector2(saPlayer.skeleton.ScaleX, 4);
                 isJump = true;
             }
         }
@@ -174,7 +174,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (GameManager.Instance.gameState == GameManager.GAMESTATE.PLAYING)
         {
-            _rig2D.velocity = moveSpeed * (saPlayer.skeleton.ScaleX > 0 ? Vector2.right : Vector2.left);
+            _rig2D.linearVelocity = moveSpeed * (saPlayer.skeleton.ScaleX > 0 ? Vector2.right : Vector2.left);
             if (saPlayer.AnimationName == str_OpenWithSword || saPlayer.AnimationName == str_OpenWithoutSword)
                 return;
             PlayAnim(isTakeSword ? str_MoveWithSword : str_Move, true);
@@ -250,7 +250,7 @@ public class PlayerManager : MonoBehaviour
         //    Debug.LogError("move:" + beginMove + ":" + isMoveLeft + ":" + isMoveRight);
         //}
 
-        if (!IsCanMove()) _rig2D.velocity = Vector2.zero;
+        if (!IsCanMove()) _rig2D.linearVelocity = Vector2.zero;
         else
         {
             if (beginMove)
@@ -276,7 +276,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (pState != P_STATE.DIE)
             {
-                _rig2D.velocity = new Vector2(0, _rig2D.velocity.y);
+                _rig2D.linearVelocity = new Vector2(0, _rig2D.linearVelocity.y);
                 if (saPlayer.AnimationName == str_Win || saPlayer.AnimationName == str_Win2 || saPlayer.AnimationName == str_OpenWithSword || saPlayer.AnimationName == str_OpenWithoutSword)
                     return;
                 PlayAnim(str_idle, true);
@@ -287,13 +287,13 @@ public class PlayerManager : MonoBehaviour
         if (pState != P_STATE.DIE)
         {
             movement = Vector2.left * moveSpeed;
-            _rig2D.velocity = new Vector2(movement.x, _rig2D.velocity.y);
+            _rig2D.linearVelocity = new Vector2(movement.x, _rig2D.linearVelocity.y);
             if (saPlayer.AnimationName == str_Win || saPlayer.AnimationName == str_Win2 || saPlayer.AnimationName == str_OpenWithSword || saPlayer.AnimationName == str_OpenWithoutSword)
                 return;
             PlayAnim(isTakeSword ? str_MoveWithSword : str_Move, true);
             Debug.LogError("====move left====");
         }
-        else _rig2D.velocity = new Vector2(0, _rig2D.velocity.y);
+        else _rig2D.linearVelocity = new Vector2(0, _rig2D.linearVelocity.y);
 
 
     }
@@ -303,7 +303,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (pState != P_STATE.DIE)
             {
-                _rig2D.velocity = new Vector2(0, _rig2D.velocity.y);
+                _rig2D.linearVelocity = new Vector2(0, _rig2D.linearVelocity.y);
                 if (saPlayer.AnimationName == str_Win || saPlayer.AnimationName == str_Win2 || saPlayer.AnimationName == str_OpenWithSword || saPlayer.AnimationName == str_OpenWithoutSword)
                     return;
                 PlayAnim(str_idle, true);
@@ -313,13 +313,13 @@ public class PlayerManager : MonoBehaviour
         if (pState != P_STATE.DIE)
         {
             movement = Vector2.right * moveSpeed;
-            _rig2D.velocity = new Vector2(movement.x, _rig2D.velocity.y);
+            _rig2D.linearVelocity = new Vector2(movement.x, _rig2D.linearVelocity.y);
             if (saPlayer.AnimationName == str_Win || saPlayer.AnimationName == str_Win2 || saPlayer.AnimationName == str_OpenWithSword || saPlayer.AnimationName == str_OpenWithoutSword)
                 return;
             PlayAnim(isTakeSword ? str_MoveWithSword : str_Move, true);
             Debug.LogError("====move right====");
         }
-        else _rig2D.velocity = new Vector2(0, _rig2D.velocity.y);
+        else _rig2D.linearVelocity = new Vector2(0, _rig2D.linearVelocity.y);
 
     }
     IEnumerator delayMove()
@@ -368,7 +368,7 @@ public class PlayerManager : MonoBehaviour
     public void OnIdleState()
     {
         pState = P_STATE.PLAYING;
-        _rig2D.velocity = Vector2.zero;
+        _rig2D.linearVelocity = Vector2.zero;
         beginMove = false;
         saPlayer.AnimationState.SetAnimation(1, str_Blink, false);
         PlayAnim(str_idle, true);
@@ -384,7 +384,7 @@ public class PlayerManager : MonoBehaviour
         beginMove = false;
         isMoveLeft = false;
         isMoveRight = false;
-        _rig2D.velocity = Vector2.zero;
+        _rig2D.linearVelocity = Vector2.zero;
         Debug.LogError("wtfkkkkkk");
 
         StartCoroutine(nameof(IEWaitToIdleAfterAttack));
@@ -430,7 +430,7 @@ public class PlayerManager : MonoBehaviour
         {
             pState = P_STATE.DIE;
             GameManager.Instance.gameState = GameManager.GAMESTATE.LOSE;
-            _rig2D.velocity = Vector2.zero;
+            _rig2D.linearVelocity = Vector2.zero;
             _rig2D.constraints = RigidbodyConstraints2D.FreezePositionX;
             transform.rotation = Quaternion.identity;
             _rig2D.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -518,7 +518,7 @@ public class PlayerManager : MonoBehaviour
     bool win = false;
     public void OnWin(bool playcollect)
     {
-        _rig2D.velocity = new Vector2(0, _rig2D.velocity.y);
+        _rig2D.linearVelocity = new Vector2(0, _rig2D.linearVelocity.y);
         transform.rotation = Quaternion.identity;
         _rig2D.constraints = RigidbodyConstraints2D.FreezeRotation;
         beginMove = false;

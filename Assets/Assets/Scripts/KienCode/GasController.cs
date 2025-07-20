@@ -33,7 +33,7 @@ public class GasController : Unit
 
             if (timeFly <= 0)
             {
-                rid.velocity = transform.up * speedMove;
+                rid.linearVelocity = transform.up * speedMove;
                 transform.rotation = Quaternion.Euler(new Vector3(0, 0, Random.Range(-360, 360)));
                 timeFly = 1f;
             }
