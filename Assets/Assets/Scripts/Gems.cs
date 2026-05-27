@@ -16,7 +16,7 @@ public class Gems : Unit
     {
         if (SoundManager.Instance != null)
         {
-            _ranIndex = Random.Range(0, SoundManager.Instance.acCoinApear.Length);
+            _ranIndex = UnityEngine.Random.Range(0, SoundManager.Instance.acCoinApear.Length);
             StartCoroutine(PlaySoundApear(_ranIndex));
         }
     }
@@ -55,7 +55,7 @@ public class Gems : Unit
             gameObject.layer = 0;
             gameObject.SetActive(false);
 
-            int randomEffect = Random.Range(0, 100);
+            int randomEffect = UnityEngine.Random.Range(0, 100);
             if (randomEffect <= 10)
             {
                 if (ObjectPoolerManager.Instance == null)

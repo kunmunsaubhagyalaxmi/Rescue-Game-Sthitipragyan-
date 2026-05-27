@@ -43,7 +43,10 @@ public class CamFollow : MonoBehaviour
             position.x = Mathf.Lerp(this.transform.position.x, objectToFollow.transform.position.x, interpolation);
             this.transform.position = position;
             // Debug.LogError(Vector2.Distance(transform.position, objectToFollow.transform.position));
-            if (GameManager.Instance.bouderCoinFly.activeSelf || GameManager.Instance.gPanelWin.sprite == GameManager.Instance.loseSp)
+            // if (GameManager.Instance.bouderCoinFly.activeSelf || GameManager.Instance.gPanelWin.sprite == GameManager.Instance.loseSp)
+            //     return;
+            Image panelImage = GameManager.Instance.gPanelWin.GetComponent<Image>();
+            if (GameManager.Instance.bouderCoinFly.activeSelf || (panelImage != null && panelImage.sprite == GameManager.Instance.loseSp))
                 return;
             if (PanelWin.transform.localScale.x <= 1.1f)
             {

@@ -19,6 +19,13 @@ public class MenuController : MonoBehaviour
     public CastlePanel castlePanel;
     public GameObject warningAchievement, warningDailyReward;
     public static bool openAchievement, openCastle;
+    public GameObject shopPanel;
+    public Button openShop;
+    public Button closeShop;
+
+    [Header("Level Selection")]
+    public LevelManager levelManager;
+    public Button showLevelPanelButton;
     private void Awake()
     {
         if (instance == null)
@@ -30,12 +37,26 @@ public class MenuController : MonoBehaviour
         AdManager.Instance.LoadAd();
         Utils.LoadGameData();
         txtCurLevel.text = "LEVEL " + (Utils.LEVEL_INDEX + 1);
+
+        if (levelManager != null)
+        {
+            levelManager.Initialize(levelConfig);
+        }
+        
+        // Set up battle/level button
+        if (showLevelPanelButton != null)
+        {
+            showLevelPanelButton.onClick.AddListener(() => levelManager.ShowLevelPanel());
+        }
+        
         if (SoundManager.Instance != null)
         {
             SoundManager.Instance.PlayBackgroundMusic();
         }
 
-
+        shopPanel.SetActive(false);
+        openShop.onClick.AddListener(OpenShop);
+        closeShop.onClick.AddListener(CloseShop);
 
         CheckShowDailyGift();
         CheckDisplayWarningAchievement();
@@ -76,6 +97,19 @@ public class MenuController : MonoBehaviour
         openCastle = false;
         Debug.LogError("=zoooooooooo= open castle");
     }
+
+    public void OpenShop()
+    {
+        shopPanel.SetActive(true);
+        SoundClickButton();
+    }
+
+    public void CloseShop()
+    {
+        shopPanel.SetActive(false);
+        SoundClickButton();
+    }
+
     public void OpenAchievement(bool open)
     {
         if (animLoading)

@@ -33,7 +33,7 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayBackgroundMusic()
     {
-        bool isMainMenu = Application.loadedLevelName.Equals("MainMenu") ? true : false;
+        bool isMainMenu = SceneManager.GetActiveScene().name == "MainMenu";
         if (Utils.isMusicOn)
         {
             audioSouceBG.mute = false;
